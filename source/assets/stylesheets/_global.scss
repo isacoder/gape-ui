@@ -1,51 +1,49 @@
 body {
-  background-color: $white;
+    background-color: $white;
   color: $medium-gray;
 }
 
-header{
-
-  h2{
-    color: $gape-blue;
-    font-size: $site-name-font;
-  }
+.main-nav{
+    ul{
+      li{
+        display: inline;
+        padding-right: 22px;
+        color: $gape-gray;
+        font-size: $nav-font-size;
+      }
+   }
 }
 
+
+
 .footer-begin-line{
-   height: 10px;
-   background-color: $light-gray;
+  height: 10px;
+  background-color: $light-gray;
 }
 
 footer{
   @include outer-container;
-  .begin-line{
-    height: 10px;
-    background-color: $light-gray;
-  }
+  padding-top: 20px;
+  text-align: center;
+
   .footer-logos{
     @include span-columns(6);
+    img{
+      padding-right: 30px;
+    }
   }
   .footer-nav{
     @include span-columns(4);
+    @extend .main-nav;
+    margin-top: 20px;
   }
   .footer-social{
     @include span-columns(2);
-  }
-
-}
-
-
-.delete-me {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  height: 100vh;
-
-  .container {
-    text-align: center;
-
-    h1 {
-      font-weight: 200;
+    img{
+      padding-top: 20px;
+      padding-right: 20px;
     }
   }
+
 }
+

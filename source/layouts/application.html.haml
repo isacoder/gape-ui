@@ -8,6 +8,28 @@
     = stylesheet_link_tag "application"
 
   %body{class: page_classes}
+    %header
+      %h1 GAPE
+      %nav
+        %ul
+          %li Inicio
+          %li ¿Qu&eacute; es?
+          %li Agendas
     = yield
-    = javascript_include_tag "https://code.jquery.com/jquery-2.1.1.min.js"
+
+    .footer-begin-line
+      %footer
+        .footer-logos
+          %img{ :src => './assets/images/puebla.png'}
+          %img{ :src => './assets/images/world-bank.png'}
+        .footer-nav
+          %nav
+            %ul
+              %li ¿Qu&eacute; es?
+              %li Contacto
+              %li Blog
+        .footer-social
+          %img{ :src => './assets/images/facebook.svg'}
+          %img{ :src => './assets/images/twitter.svg'}
+        = javascript_include_tag "https://code.jquery.com/jquery-2.1.1.min.js"
     = javascript_include_tag "application"

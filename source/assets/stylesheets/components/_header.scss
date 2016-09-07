@@ -1,0 +1,19 @@
+header{
+  padding: 60px 110px 0px 110px;
+  overflow: hidden;
+  h1{
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    color: $gape-blue;
+    font-size: $site-name-font;
+    display: inline-block;
+  }
+
+  nav{
+    float: right;
+    clear: both;
+    @extend .main-nav;
+  }
+}
+
