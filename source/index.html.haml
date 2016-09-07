@@ -1,11 +1,24 @@
----
-title: Page Title
----
-
-.delete-me
-  .container
-    %h1 thoughtbot Middleman Starter
-    %p
-      You're all set!
-      <a href="http://github.com/thoughtbot/proteus-middleman">Let's get started</a>
-      building your prototype.
+%html
+  %header
+    %h2 GAPE
+    %nav
+      %ul
+        %li Inicio
+        %li ¿Qu&eacute; es?
+        %li Agendas
+        %li Blog
+  %body
+    .footer-begin-line
+    %footer
+      .footer-logos
+        %img{ :src => './assets/images/puebla.png'}
+        %img{ :src => './assets/images/world-bank.png'}
+      .footer-nav
+        %nav
+          %ul
+            %li ¿Qu&eacute; es?
+            %li Contacto
+            %li Blog
+      .footer-social
+        %img{ :src => './assets/images/facebook.svg'}
+        %img{ :src => './assets/images/twitter.svg'}

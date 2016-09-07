@@ -1,7 +1,39 @@
 body {
-  background-color: $light-gray;
+  background-color: $white;
   color: $medium-gray;
 }
+
+header{
+
+  h2{
+    color: $gape-blue;
+    font-size: $site-name-font;
+  }
+}
+
+.footer-begin-line{
+   height: 10px;
+   background-color: $light-gray;
+}
+
+footer{
+  @include outer-container;
+  .begin-line{
+    height: 10px;
+    background-color: $light-gray;
+  }
+  .footer-logos{
+    @include span-columns(6);
+  }
+  .footer-nav{
+    @include span-columns(4);
+  }
+  .footer-social{
+    @include span-columns(2);
+  }
+
+}
+
 
 .delete-me {
   align-items: center;
