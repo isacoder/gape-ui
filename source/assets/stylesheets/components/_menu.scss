@@ -1,14 +1,19 @@
-
 .menu-item{
     outline:none;
     overflow:hidden;
     text-decoration: none;
     width: 25%;
     height: 200px;
-    padding-top: 20px;
     float: left;
     text-align: center;
-    display: block
+    display: block;
+    padding: 50px 50px 15px 50px;
+    .text-container{
+      padding-top: 20px;
+      vertical-align: middle;
+      margin-top:0px;
+      margin-bottom:0px;
+    }
 }
 
 .menu{

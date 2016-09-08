@@ -23,23 +23,40 @@
       %span.text-big-blue Gobierno
       %p Gobierno Abierto tiene como objetivo que los ciudadanos colaboren en la creaci&oacute;n y el mejoramiento de los servicios públicos, en la transparencia y en la rendición de cuentas.
     .menu
-      .item-light-blue
-        %a{:href => "#"}
+      %a.item-light-blue{:href => "#"}
         %img{:alt => "", :src => "./assets/images/diagnostico.svg"}/
-        %h2 Diagn&oacute;stico
-      .item-dark-blue
-        %a{:href => "#"}
+        .text-container
+          %h2 Diagn&oacute;stico
+      %a.item-dark-blue{:href => "#"}
         %img{:alt => "", :src => "./assets/images/trabajo.svg"}/
-        %h2 Mesas de Trabajo
-      .item-blue
-        %a{:href => "#"}
+        .text-container
+          %h2 Mesas de Trabajo
+      %a.item-blue{:href => "#"}
         %img{:alt => "", :src => "./assets/images/compromisos.svg"}/
-        %h2 Compromisos
-      .item-orange
-        %a{:href => "#"}
+        .text-container
+          %h2 Compromisos
+      %a.item-orange{:href => "#"}
         %img{:alt => "", :src => "./assets/images/resultados.svg"}/
-        %h2 Seguimiento de Resultados
+        .text-container
+          %h2 Seguimiento de Resultados
 
+    .article
+      %header
+        %img{:alt => "", :src => "./assets/images/agenda.svg"}/
+        %h2 Agendas Abiertas
+      %main
+        %h3 Educaci&oacute;n Superior
+        .status
+        %ul
+          %li
+            %img{:alt => "", :src => "./assets/images/mesa.svg"}/
+            %span 2 mesas de trabajo
+          %li
+            %img{:alt => "", :src => "./assets/images/compromisos2.svg"}/
+            %span 3 compromisos abiertos
+          %li
+            %img{:alt => "", :src => "./assets/images/compromisos2.svg"}/
+            %span 1 resultado
     = yield
 
     .footer-begin-line
