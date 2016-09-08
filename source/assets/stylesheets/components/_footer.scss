@@ -1,1 +1,34 @@
 
+.footer-begin-line{
+  height: 10px;
+  background-color: $light-gray;
+}
+
+footer{
+  padding-top: 20px;
+  text-align: center;
+
+  .footer-logos{
+    @include span-columns(6);
+    position: left;
+    padding-left:140px;
+
+    img{
+      padding-right: 30px;
+    }
+  }
+  .footer-nav{
+    @include span-columns(3);
+    @extend .main-nav;
+    margin-top: 20px;
+  }
+  .footer-social{
+    @include span-columns(1.5);
+    img{
+      padding-top: 20px;
+      padding-right: 20px;
+    }
+  }
+
+}
+

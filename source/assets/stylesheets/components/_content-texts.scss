@@ -1,0 +1,38 @@
+
+h1{
+  font-family: $base-font-family;
+  width: 200px;
+  color: $blue;
+  font-size: $site-name-font;
+  display: inline-block;
+}
+h2{
+  display: inline-block;
+  color: $white;
+  font-size: $small-font-size;
+}
+.text-big-light-blue{
+  font-family: $base-font-family;
+  color: $light-blue;
+  font-size: $big-font-size;
+  font-weight: bold;
+}
+.text-medium-light-blue{
+  font-family: $base-font-family;
+  color: $light-blue;
+  font-size: $big-font-size;
+  font-weight: bold;
+}
+.text-big-blue{
+  font-family: $base-font-family;
+  color: $blue;
+  font-size: $big-font-size;
+  font-weight: bold;
+}
+
+p{
+  color: $dark-gray;
+  font-family: $base-font-family;
+  font-size: $small-font-size;
+}
+

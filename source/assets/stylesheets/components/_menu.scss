@@ -1,0 +1,36 @@
+
+.menu-item{
+    outline:none;
+    overflow:hidden;
+    text-decoration: none;
+    width: 25%;
+    height: 200px;
+    padding-top: 20px;
+    float: left;
+    text-align: center;
+    display: block
+}
+
+.menu{
+  height: 200px;
+  margin-bottom: 115px;
+  .item-light-blue{
+    @extend .menu-item;
+    background-color: $light-blue;
+  }
+
+  .item-dark-blue{
+    @extend .menu-item;
+    background-color: $dark-blue;
+  }
+
+  .item-blue{
+    @extend .menu-item;
+    background-color: $blue;
+  }
+
+  .item-orange{
+    @extend .menu-item;
+    background-color: $orange;
+  }
+}

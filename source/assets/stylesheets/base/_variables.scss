@@ -5,6 +5,8 @@ $heading-font-family: $base-font-family;
 // Font Sizes
 $base-font-size: 1em;
 $site-name-font: 3.8em;
+$big-font-size: 4.5em;
+$small-font-size: 1.4em;
 $nav-font-size: 1.4em;
 // Line height
 $base-line-height: 1.5;
@@ -17,10 +19,11 @@ $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
 
 // Colors
-$blue: #1565c0;
-$gape-blue: #005195;
-$gape-gray: #5b5b5b;
-$dark-gray: #333;
+$orange: #f07b05;
+$blue: #005195;
+$light-blue: #009abc;
+$dark-blue: #133150;
+$dark-gray: #5b5b5b;
 $medium-gray: #999;
 $light-gray: #ddd;
 $white: #fff;
