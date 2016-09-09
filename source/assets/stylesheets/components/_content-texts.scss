@@ -7,8 +7,8 @@ h1{
   display: inline-block;
 }
 h2{
-  color: $white;
   font-size: $small-font-size;
+  font-family: $base-font-family;
 }
 .text-big-light-blue{
   font-family: $base-font-family;
@@ -35,3 +35,8 @@ p{
   font-size: $small-font-size;
 }
 
+span{
+  color: $dark-gray;
+  font-family: $base-font-family;
+  font-size: $small-font-size;
+}

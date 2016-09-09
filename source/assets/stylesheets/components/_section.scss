@@ -1,0 +1,47 @@
+.diferent-h3{
+  font-size: $medium-font-size;
+}
+
+article{
+  @include outer-container(66%);
+  header{
+    margin: 0 0 50px 0;
+    padding: 0;
+    h2{
+      margin: 0;
+      display: inline-block;
+      color: $blue;
+      font-size: $medium-font-size;
+    }
+  }
+  main{
+    border: 1px solid $blue;
+    border-radius: 8px;
+    padding: 25px;
+    margin: 0 0 20px 0;
+    .status-ball{
+        margin:0;
+        padding: 0;
+        background: $green;
+        border-radius: 50%;
+        height: 10px;
+        width: 10px;
+    }
+    h3{
+      color: $blue;
+      font-size: $small-font-size;
+    }
+    ul{
+      li{
+        display: inline;
+        margin-right: 50px;
+        img{
+          margin-right: 15px;
+        }
+      }
+      li:last-child{
+        padding-right: 0px;
+      }
+    }
+  }
+}
