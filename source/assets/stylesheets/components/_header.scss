@@ -8,6 +8,13 @@ header{
     clear: both;
     padding-top: 25px;
     @extend .main-nav;
+    @include media(min-width 320px max-width 799px){
+      float: none;
+      padding-top: 10px;
+    }
   }
+
+  @extend .four-display-settings;
 }
+
 

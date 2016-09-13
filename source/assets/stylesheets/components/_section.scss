@@ -1,9 +1,42 @@
+
+.status{
+  display: inline-block;
+  margin-bottom: 15px;
+  h4{
+    font-weight: normal;
+    padding-left: 20px;
+    line-height: .5;
+  }
+}
+
+.status-ball{
+  float: left;
+  margin:0 !important;
+  padding: 0 !important;
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+}
+
+
+.status-ball-green{
+  @extend .status-ball;
+  background: $green;
+}
+
 .diferent-h3{
   font-size: $medium-font-size;
+  margin-bottom: 10px;
+  @include media(min-width 320px max-width 779px){
+    font-size: $small-font-size;
+  }
 }
 
 article{
   @include outer-container(66%);
+  @include media(min-width 320px max-width 779px){
+    @include outer-container (90%);
+  }
   header{
     margin: 0 0 50px 0;
     padding: 0;
@@ -12,31 +45,40 @@ article{
       display: inline-block;
       color: $blue;
       font-size: $medium-font-size;
+      @include media(min-width 320px max-width 779px){
+        font-size: $small-font-size;
+      }
     }
+    img{
+        @include media(min-width 320px max-width 779px){
+          width: 40px;
+        }
+      }
   }
   main{
     border: 1px solid $blue;
     border-radius: 8px;
     padding: 25px;
     margin: 0 0 20px 0;
-    .status-ball{
-        margin:0;
-        padding: 0;
-        background: $green;
-        border-radius: 50%;
-        height: 10px;
-        width: 10px;
-    }
     h3{
       color: $blue;
       font-size: $small-font-size;
     }
     ul{
       li{
-        display: inline;
+        display: inline-block;
         margin-right: 50px;
+        font-size: $small-font-size;
+        @include media(min-width 320px max-width 779px){
+          display: block;
+          margin-right: 0;
+          overflow: hidden;
+          padding-top: 10px;
+          font-size: $base-font-size;
+        }
         img{
           margin-right: 15px;
+          vertical-align: middle;
         }
       }
       li:last-child{

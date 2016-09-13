@@ -1,0 +1,18 @@
+
+.main-nav{
+    ul{
+      li{
+        display: inline-block;
+        padding-right: 22px;
+        color: $dark-gray;
+        font-size: $nav-font-size;
+        @include media(min-width 320px max-width 779px){
+          font-size: $nav-small-font;
+        }
+      }
+      li:last-child{
+        padding-right: 0px;
+      }
+   }
+}
+

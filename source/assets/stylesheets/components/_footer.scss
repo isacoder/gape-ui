@@ -30,5 +30,22 @@ footer{
     }
   }
 
+  @include media(min-width 320px max-width 779px){
+    height: 250px;
+    .footer-logos{
+      @include span-columns(12);
+      position: left;
+      padding-left: 10px;
+      img{
+        height: 50px;
+      }
+    }
+    .footer-nav{
+      @include span-columns(12);
+    }
+    .footer-social{
+      @include span-columns(12);
+    }
+  }
 }
 

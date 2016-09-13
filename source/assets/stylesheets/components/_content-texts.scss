@@ -1,42 +1,65 @@
 
 h1{
+  margin: 0;
   font-family: $base-font-family;
   width: 200px;
   color: $blue;
   font-size: $site-name-font;
   display: inline-block;
+  @include media(min-width 780px max-width 1199px){
+    font-size: $medium-site-name;
+  }
+  @include media(min-width 320px max-width 779px) {
+    font-size: $small-site-name;
+  }
 }
 h2{
   font-size: $small-font-size;
   font-family: $base-font-family;
+  @include media(min-width 320px max-width 779px) {
+    font-size: $base-font-size;
+  }
 }
-.text-big-light-blue{
-  font-family: $base-font-family;
-  color: $light-blue;
-  font-size: $big-font-size;
-  font-weight: bold;
-}
-.text-medium-light-blue{
-  font-family: $base-font-family;
-  color: $light-blue;
-  font-size: $big-font-size;
-  font-weight: bold;
-}
-.text-big-blue{
-  font-family: $base-font-family;
-  color: $blue;
-  font-size: $big-font-size;
-  font-weight: bold;
+h4{
+  font-size: $small-font-size;
 }
 
-p{
+.text-big{
+  font-family: $base-font-family;
+  font-size: $big-font-size;
+  font-weight: bold;
+  @include media(min-width 320px max-width 779px) {
+    font-size: $small-site-name;
+  }
+}
+
+.text-big-light-blue{
+  color: $light-blue;
+  @extend .text-big;
+}
+.text-medium-light-blue{
+  color: $light-blue;
+  @extend .text-big;
+}
+.text-big-blue{
+  color: $blue;
+  @extend .text-big;
+}
+
+.normal-text{
   color: $dark-gray;
   font-family: $base-font-family;
   font-size: $small-font-size;
+  @include media(min-width 320px max-width 779px) {
+    font-size: $base-font-size;
+  }
+}
+
+
+p{
+  @extend .normal-text;
 }
 
 span{
-  color: $dark-gray;
-  font-family: $base-font-family;
-  font-size: $small-font-size;
+  @extend .normal-text;
 }
