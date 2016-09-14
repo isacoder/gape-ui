@@ -1,7 +1,26 @@
+.extra-info{
+  margin-top: 30px;
+  ul{
+    li{
+      display: block !important;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
 .middle-text{
   text-align: center;
   padding-top: 40px;
   padding-bottom: 40px;
+}
+
+.avance{
+  text-decoration: underline; 
+  color: $blue;
+  @include media(min-width 320px max-width 1199px){
+    padding-top: 10px;
+  } 
 }
 .status{
   display: inline-block;
@@ -28,13 +47,6 @@
   background: $green;
 }
 
-.diferent-h3{
-  font-size: $medium-font-size;
-  margin-bottom: 10px;
-  @include media(min-width 320px max-width 779px){
-    font-size: $small-font-size;
-  }
-}
 
 article{
   @include outer-container(66%);
@@ -67,10 +79,6 @@ article{
     margin: 0 0 20px 0;
     position: relative;
     box-sizing: border-box;
-    h3{
-      color: $blue;
-      font-size: $small-font-size;
-    }
     ul{
       li{
         display: inline-block;

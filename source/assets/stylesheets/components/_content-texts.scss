@@ -20,8 +20,28 @@ h2{
     font-size: $base-font-size;
   }
 }
+h3{
+  color: $blue;
+  font-size: $small-font-size;
+}
+.big-h3{
+  font-size: $medium-font-size;
+  margin-bottom: 10px;
+  @include media(min-width 320px max-width 779px){
+    font-size: $small-font-size;
+  }
+}
 h4{
   @extend .normal-text;
+}
+
+h5{
+  color: $dark-gray;
+  font-size: $p-font-size;
+  font-family: $base-font-family;
+  @include media(min-width 320px max-width 779px) {
+    font-size: $base-font-size;
+  }
 }
 
 .normal-text{
@@ -55,11 +75,23 @@ h4{
 }
 
 p{
+  color: $dark-gray;
+  font-size: $p-font-size;
+  font-family: $base-font-family;
+  @include media(min-width 320px max-width 779px) {
+    font-size: $base-font-size;
+  }
+}
+.big-p{
   @extend .normal-text;
 }
 
 span{
   @extend .normal-text;
+}
+
+.add-margin-top{
+  margin-top: 30px;
 }
 
 
