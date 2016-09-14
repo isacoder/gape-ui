@@ -60,7 +60,7 @@ article{
         }
       }
   }
-  main{
+  .content-item{
     border: 1px solid $blue;
     border-radius: 8px;
     padding: 25px;
@@ -75,7 +75,7 @@ article{
       li{
         display: inline-block;
         margin-right: 50px;
-        font-size: $small-font-size;
+        font-size: $small-font-size !important;
         @include media(min-width 320px max-width 1199px){
           display: block;
           margin-right: 0;
@@ -99,6 +99,7 @@ article{
       position: absolute;
       right: 30px;
       margin-top: -30px !important;
+      font-size: $small-font-size;
       @include media(min-width 320px max-width 1199px){
         position: relative;
         float: none;
@@ -106,6 +107,7 @@ article{
         right: auto;
         bottom: auto;
         margin-top: 10px !important;
+        font-size: $base-font-size;
       }
     }
   }

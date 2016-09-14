@@ -8,90 +8,21 @@
     = stylesheet_link_tag "application"
 
   %body{class: page_classes}
-    %header
-      %h1 GAPE
-      %nav
-        %ul
-          %li Inicio
-          %li ¿Qu&eacute; es?
-          %li Agendas
-          %li Blog
+    = partial "./layouts/header"
     .gape-introduction
       %span.text-big-light-blue GAPE:
       %span.text-big-blue Sociedad
       %span.text-big-light-blue +
       %span.text-big-blue Gobierno
       %p Gobierno Abierto tiene como objetivo que los ciudadanos colaboren en la creaci&oacute;n y el mejoramiento de los servicios públicos, en la transparencia y en la rendición de cuentas.
-    .menu
-      %a.item-light-blue{:href => "#"}
-        %img{:alt => "", :src => "./assets/images/diagnostico.svg"}/
-        .text-container
-          %h2 Diagn&oacute;stico
-      %a.item-dark-blue{:href => "#"}
-        %img{:alt => "", :src => "./assets/images/trabajo.svg"}/
-        .text-container
-          %h2 Mesas de Trabajo
-      %a.item-blue{:href => "#"}
-        %img{:alt => "", :src => "./assets/images/compromisos.svg"}/
-        .text-container
-          %h2 Compromisos
-      %a.item-orange{:href => "#"}
-        %img{:alt => "", :src => "./assets/images/resultados.svg"}/
-        .text-container
-          %h2 Seguimiento de Resultados
-
-    %article
-      %header
-        %img{:alt => "", :src => "./assets/images/agenda.svg"}/
-        %h2 Agendas Abiertas
-      %main
-        %h3.diferent-h3 Educaci&oacute;n Superior
-        .status
-          .status-ball-green
-          %h4 Abierto
-        %ul
-          %li
-            %img{:alt => "", :src => "./assets/images/mesa.svg"}/
-            2 mesas de trabajo
-          %li
-            %img{:alt => "", :src => "./assets/images/compromisos2.svg"}/
-            3 compromisos abiertos
-          %li
-            %img{:alt => "", :src => "./assets/images/compromisos2.svg"}/
-            1 resultado
+    = partial "./layouts/menu"
+    = partial "./layouts/agendas-abiertas"
     .middle-text
       %p ¿No ves un tema que sea de tu inter&eacute;s?
       %button Prop&oacute;n una agenda de apertura
-    %article
-      %header
-        %img{:alt => "", :src => "./assets/images/mesa.svg"}/
-        %h2 Mesas de trabajo
-      %main
-        %h3 Talleres de oto&ntilde;o
-        %ul
-          %li
-            Educaci&oacute;n Superior
-          %li
-            Virtual
-          %li
-            %img{:alt => "", :src => "./assets/images/calendar.svg"}/
-            11 de octubre
-        %a Ver m&aacute;s detalles &#8594;
+    = partial "./layouts/mesas-de-trabajo"
+    = partial "./layouts/compromisos"
+    = partial "./layouts/footer"
     = yield
-
-    .footer-begin-line
-      %footer
-        .footer-logos
-          %img{ :src => './assets/images/puebla.png'}
-          %img{ :src => './assets/images/world-bank.png'}
-        .footer-nav
-          %nav
-            %ul
-              %li ¿Qu&eacute; es?
-              %li Contacto
-              %li Blog
-        .footer-social
-          %img{ :src => './assets/images/facebook.svg'}
-          %img{ :src => './assets/images/twitter.svg'}
-        = javascript_include_tag "https://code.jquery.com/jquery-2.1.1.min.js"
+    = javascript_include_tag "https://code.jquery.com/jquery-2.1.1.min.js"
     = javascript_include_tag "application"

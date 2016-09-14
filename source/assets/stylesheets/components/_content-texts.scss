@@ -21,9 +21,17 @@ h2{
   }
 }
 h4{
-  font-size: $small-font-size;
+  @extend .normal-text;
 }
 
+.normal-text{
+  color: $dark-gray;
+  font-family: $base-font-family;
+  font-size: $small-font-size;
+  @include media(min-width 320px max-width 779px) {
+    font-size: $base-font-size;
+  }
+}
 .text-big{
   font-family: $base-font-family;
   font-size: $big-font-size;
@@ -46,16 +54,6 @@ h4{
   @extend .text-big;
 }
 
-.normal-text{
-  color: $dark-gray;
-  font-family: $base-font-family;
-  font-size: $small-font-size;
-  @include media(min-width 320px max-width 779px) {
-    font-size: $base-font-size;
-  }
-}
-
-
 p{
   @extend .normal-text;
 }
@@ -63,3 +61,5 @@ p{
 span{
   @extend .normal-text;
 }
+
+
