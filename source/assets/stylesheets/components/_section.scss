@@ -1,4 +1,8 @@
-
+.middle-text{
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
 .status{
   display: inline-block;
   margin-bottom: 15px;
@@ -37,8 +41,9 @@ article{
   @include media(min-width 320px max-width 779px){
     @include outer-container (90%);
   }
+  overflow:hidden;
   header{
-    margin: 0 0 50px 0;
+    margin: 60px 0 50px 0;
     padding: 0;
     h2{
       margin: 0;
@@ -60,6 +65,8 @@ article{
     border-radius: 8px;
     padding: 25px;
     margin: 0 0 20px 0;
+    position: relative;
+    box-sizing: border-box;
     h3{
       color: $blue;
       font-size: $small-font-size;
@@ -69,7 +76,7 @@ article{
         display: inline-block;
         margin-right: 50px;
         font-size: $small-font-size;
-        @include media(min-width 320px max-width 779px){
+        @include media(min-width 320px max-width 1199px){
           display: block;
           margin-right: 0;
           overflow: hidden;
@@ -83,6 +90,22 @@ article{
       }
       li:last-child{
         padding-right: 0px;
+      }
+    }
+    a{
+      float: right;
+      text-decoration: underline;
+      display: block;
+      position: absolute;
+      right: 30px;
+      margin-top: -30px !important;
+      @include media(min-width 320px max-width 1199px){
+        position: relative;
+        float: none;
+        left: auto;
+        right: auto;
+        bottom: auto;
+        margin-top: 10px !important;
       }
     }
   }
